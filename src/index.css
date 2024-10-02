@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: Accent;
-    src: url(../public/Fonts/Accent/Callisa-Beauty-BF6639cfd4336e6.ttf);
+    src: url(/Fonts/Accent/Callisa-Beauty-BF6639cfd4336e6.ttf);
 }
 
 .blob1 {
@@ -31,7 +31,7 @@
     aspect-ratio: 1/1;
     animation: animate 10s linear infinite forwards alternate
         ;
-    animation-delay: 2.5s;
+    animation-delay: 5s;
     filter: blur(200px);
     background-color: #480ca8;
     border-radius: 100%;
