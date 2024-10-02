@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.blob1 {
+    position: absolute;
+    opacity: 0.5;
+    width: 400px;
+    height: 400px;
+    aspect-ratio: 1/1;
+    animation: animate 10s linear infinite forwards alternate
+        ;
+    filter: blur(200px);
+    background-color: #023e8a;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18rem
+}
+.blob2 {
+    position: absolute;
+    opacity: 0.5;
+    width: 400px;
+    height: 400px;
+    aspect-ratio: 1/1;
+    animation: animate 10s linear infinite forwards alternate
+        ;
+    animation-delay: 0.5s;
+    filter: blur(200px);
+    background-color: #480ca8;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 18rem
+}
+
+@keyframes animate {
+        from{
+            transform: translateX(100px);
+        }
+        to{
+            transform: translateX(-600px);
+            /* transform: translateY(20px); */
+        }
+
+}
