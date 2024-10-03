@@ -7,6 +7,12 @@
     src: url(/Fonts/Accent/Callisa-Beauty-BF6639cfd4336e6.ttf);
 }
 
+
+body{
+    height: 600vh;
+    background-color: #000814;
+}
+
 .blob1 {
     position: absolute;
     opacity: 0.5;

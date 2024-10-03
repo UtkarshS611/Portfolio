@@ -2,7 +2,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Header = () => {
     return (
-        <div className="text-white py-4 mt-6 z-[40] fixed  w-full flex justify-around  items-center">
+        <div className="text-white py-4 mt-6 z-[900] fixed  w-full flex justify-around  items-center">
             <div className="md:ml-[7rem]">
                 Logo
             </div>

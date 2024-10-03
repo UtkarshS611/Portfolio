@@ -2,8 +2,26 @@ import { SparklesCore } from "./components/ui/sparkles"
 import { FaArrowRight } from "react-icons/fa6";
 import { BsFiles } from "react-icons/bs";
 import Header from "./components/Header/Header";
+import { useState } from "react";
 
 const App = () => {
+
+  const [copySuccess, setCopySuccess] = useState<string>('');
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopySuccess('Copied to Clipboard');
+      
+      setTimeout(() => {
+        setCopySuccess('');
+      }, 2000); 
+    } catch (err) {
+      setCopySuccess('Failed to copy!');
+    }
+  };
+
+    
 
   return (
     <div>
@@ -40,14 +58,38 @@ const App = () => {
                 <FaArrowRight />
               </span>
             </button>
-            <button className="flex justify-center items-center gap-2">
+            <button className="flex justify-center items-center gap-2" onClick={() => copyToClipboard('utkarsh.singh6113@gmail.com')}>
               <span>
               <BsFiles />
               </span>
-              <span>
-                Copy email
-              </span>
+              <div>
+                <span>
+                  {copySuccess ? copySuccess : 'Copy email'}
+                </span>
+              </div>
             </button>
+          </div>
+        </div>
+      </div>
+      <div className="relative flex flex-col-reverse items-center lg:flex-row w-full lg:w-[70vw] gap-16 lg:gap-32 mx-auto mt-16 pt-16 text-white">
+        <div className="w-full flex flex-col items-center gap-4 lg:gap-8">
+          <h1 className="font-semibold  w-full text-center lg:text-start text-3xl lg:text-4xl">
+            My journey so far...
+          </h1>
+          <p className="text-[16px] lg:text-[18px] text-white/80 text-center lg:text-start">
+            Seasoned with 1 year of experience as a product and a marketing developer, I've worked on projects with various nature be it e-commerce, Finance, Healthcare, Manufacturing and more.
+            <br />
+            <br />
+            Be it SaaS, PaaS, websites or apps, my learn-it-all attitude and entrepreneurial mindset drives me to create digital experiences that resonate with users and drive success.
+          </p>
+        </div>
+        <div className="w-full">
+          <div className="h-[30vh] w-[25vh] bg-[white] p-[0.75rem] rotate-[-8deg] hover:rotate-0 duration-200 hover:scale-[1.04] hover:z-[0] rounded-lg flex flex-col gap-2">
+              <img src="https://images.unsplash.com/photo-1727773377765-04d5bd488f44?q=80&w=2525&auto=format&fit=crop&
+              ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="h-[22vh] w-[22vh]"/>
+              <div className="flex justify-center items-end font-bold mt-4 font-Accent text-[#000000c4]">
+                That's me
+              </div>
           </div>
         </div>
       </div>
