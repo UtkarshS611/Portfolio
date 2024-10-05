@@ -3,6 +3,8 @@ import { FaArrowRight } from "react-icons/fa6";
 import { BsFiles } from "react-icons/bs";
 import Header from "./components/Header/Header";
 import { useState } from "react";
+// import { gsap } from "gsap";
+
 
 const App = () => {
 
@@ -21,19 +23,31 @@ const App = () => {
     }
   };
 
+  // useEffect(() => {
+  //       document.querySelector("main")?.addEventListener('mousemove', function(dets){
+  //       gsap.to('#cursor',{
+  //         x: dets.x,
+  //         y: dets.y,
+  //         duration: 0.5,
+  //       })
+  //     })
+  // }, []);
+
     
 
   return (
-    <div>
+    <main>
+      {/* <div className="fixed h-[60px] w-[60px]  bg-white z-[99999] rounded-full" id="cursor">
+      </div> */}
       <Header />
       <div className="flex justify-center items-center h-screen relative">
         <div className="bg-[#000814] h-screen w-full overflow-hidden absolute">
           <SparklesCore className=" w-full h-[200vh] z-[1] translate-y-[-50%] absolute"  particleColor="#fff" particleSize={1} speed={1} particleDensity={20} maxSize={0.2} background="transparent"
           />
-          <div className="h-[1460vh] z-20 w-[100vh] absolute left-[50%] translate-x-[-50%] top-[100%] blur-[200px] opacity-100 bg-white rounded-full aspect-square flex justify-center items-center">
+          <div className="h-[1460vh] z-19 w-[100vh] absolute left-[50%] translate-x-[-50%] top-[100%] blur-[200px] opacity-100 bg-white rounded-full aspect-square flex justify-center items-center">
           </div>
             <div className="h-[510vh] w-[500vh] absolute left-[50%] translate-x-[-50%] top-[80%] z-[20] bg-white rounded-full aspect-[1/1] flex justify-center items-center">
-              <div className="h-[510vh] w-[511vh] cursor-pointer absolute top-[0.05%] bg-[#000814] rounded-full aspect-[1/1] blur-[1.5px]">
+              <div className="h-[510vh] w-[511vh] cursor-pointer absolute top-[0.035%] bg-[#000814] rounded-full aspect-[1/1] blur-[1.5px]">
               </div>
             </div>
           <div className="blob1 z-[19]"></div>
@@ -71,20 +85,32 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-col-reverse items-center lg:flex-row w-full lg:w-[70vw] gap-16 lg:gap-32 mx-auto mt-16 pt-16 text-white">
-        <div className="w-full flex flex-col items-center gap-4 lg:gap-8">
-          <h1 className="font-semibold  w-full text-center lg:text-start text-3xl lg:text-4xl">
+    <div className="flex flex-col-reverse items-center lg:flex-row w-full lg:w-[70vw] gap-16 lg:gap-32 mx-auto mt-16 pt-16 text-white">
+        <div className="w-full flex flex-col items-center justify-center gap-4 lg:gap-8">
+          <h1 className="font-semibold  w-full text-center lg:text-start  text-3xl lg:text-4xl">
             My journey so far...
           </h1>
           <p className="text-[16px] lg:text-[18px] text-white/80 text-center lg:text-start">
-            Seasoned with 1 year of experience as a product and a marketing developer, I've worked on projects with various nature be it e-commerce, Finance, Healthcare, Manufacturing and more.
+            Seasoned with a year of experience as a product and a marketing developer, I've worked on projects with various nature be it e-commerce, Finance, Healthcare, Manufacturing and more.
             <br />
             <br />
             Be it SaaS, PaaS, websites or apps, my learn-it-all attitude and entrepreneurial mindset drives me to create digital experiences that resonate with users and drive success.
           </p>
         </div>
-        <div className="w-full">
-          <div className="h-[30vh] w-[25vh] bg-[white] p-[0.75rem] rotate-[-8deg] hover:rotate-0 duration-200 hover:scale-[1.04] hover:z-[0] rounded-lg flex flex-col gap-2">
+        <div className="w-full flex justify-center relative h-[35vh]">
+          <div className="h-[30vh] w-[25vh] bg-[white] p-[0.75rem] absolute top-0 left-[70%] translate-x-[-50%] rotate-[-8deg] hover:rotate-0 duration-200 hover:scale-[1.04] hover:shadow-2xl hover:z-[1] rounded-lg flex flex-col gap-2">
+              <img src="https://images.unsplash.com/photo-1727373631848-e6da2d85c872?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="h-[22vh] w-[22vh]"/>
+              <div className="flex justify-center items-end font-bold mt-4 font-Accent text-[#000000c4]">
+                hello it's me
+              </div>
+          </div>
+          <div className="h-[30vh] w-[25vh] bg-[white] p-[0.75rem] absolute top-0 left-[30%] translate-x-[-50%] rotate-[8deg] hover:rotate-0 duration-200 hover:scale-[1.04] hover:shadow-2xl hover:z-[1] rounded-lg flex flex-col gap-2">
+              <img src="https://images.unsplash.com/photo-1727915325711-5fdfb5a0a55c?q=80&w=2696&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="h-[22vh] w-[22vh]"/>
+              <div className="flex justify-center items-end font-bold mt-4 font-Accent text-[#000000c4]">
+                That's me again..
+              </div>
+          </div>
+          <div className="h-[30vh] w-[25vh] bg-[white] p-[0.75rem] absolute top-[10%] duration-200 hover:scale-[1.04] hover:z-[1] rounded-lg flex flex-col gap-2 hover:shadow-2xl">
               <img src="https://images.unsplash.com/photo-1727773377765-04d5bd488f44?q=80&w=2525&auto=format&fit=crop&
               ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="h-[22vh] w-[22vh]"/>
               <div className="flex justify-center items-end font-bold mt-4 font-Accent text-[#000000c4]">
@@ -93,7 +119,7 @@ const App = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 
