@@ -10,7 +10,7 @@ const ProjectShowCase = () => {
                 <div className="flex flex-col 2xl:flex-row gap-4 w-full 2xl:w-[80%] mx-auto mt-[2rem] items-center 2xl:items-start">
                     <div className="w-full px-8">
                         <div className="border-[1px] p-2 h-[40vh] md:h-[55vh] w-full 2xl:w-[45vw] rounded-3xl ">
-                            <div className={`border-[1px] h-full rounded-2xl bg-gradient-to-b from-[${Data.Project1.GradientFrom}] to-[${Data.Project1.GradientTo}] relative overflow-hidden`}>
+                            <div className={`border-[1px] h-full rounded-2xl bg-gradient-to-b from-[#94d2bd] to-[#0a9396] relative overflow-hidden`}>
                                 <div className="flex items-center justify-between px-20 pt-8 font-bold text-black">
                                     <div>
                                         <h2 className="text-xl hidden md:block">
@@ -40,7 +40,7 @@ const ProjectShowCase = () => {
                                 {Data.Project1.Timeline}
                             </span>
                             <span>
-                                <div className={`h-[2px] w-[40px] bg-[${Data.Project1.AccentColor}]`}></div>
+                                <div className={`h-[2px] w-[40px] bg-[#0a9396]`}></div>
                             </span>
                         </div>
                     </div>
@@ -51,11 +51,11 @@ const ProjectShowCase = () => {
                         </p>
                         <div className="flex flex-col gap-2">
                             <span className="flex gap-4 items-center">
-                                <BsStars className={`text-[${Data.Project1.AccentColor}] text-xl`}/>
+                                <BsStars className={`text-[#0a9396] text-xl`}/>
                                 <p>{Data.Project1.point1}</p>
                             </span>
                             <span className="flex gap-4 items-center">
-                                <BsStars className={`text-[${Data.Project1.AccentColor}] text-xl`}/>
+                                <BsStars className={`text-[#0a9396] text-xl`}/>
                                 <p>{Data.Project1.point2}</p>
                             </span>
                         </div>
@@ -64,7 +64,7 @@ const ProjectShowCase = () => {
                 <div className="flex flex-col 2xl:flex-row gap-4 w-full 2xl:w-[80%] mx-auto mt-[2rem] items-center 2xl:items-start">
                     <div className="w-full px-8">
                         <div className="border-[1px] p-2 h-[40vh] md:h-[55vh] w-full 2xl:w-[45vw] rounded-3xl ">
-                            <div className={`border-[1px] h-full rounded-2xl bg-gradient-to-b from-[${Data.Project2.GradientFrom}] to-[${Data.Project2.GradientTo}] relative overflow-hidden`}>
+                            <div className={`border-[1px] h-full rounded-2xl bg-gradient-to-b from-[#fcefb4] to-[#ec9f05] relative overflow-hidden`}>
                                 <div className="flex items-center justify-between px-20 pt-8 font-bold text-black">
                                     <div>
                                         <h2 className="text-xl hidden md:block">
@@ -94,7 +94,7 @@ const ProjectShowCase = () => {
                                 {Data.Project2.Timeline}
                             </span>
                             <span>
-                                <div className={`h-[2px] w-[40px] bg-[${Data.Project2.AccentColor}]`}></div>
+                                <div className={`h-[2px] w-[40px] bg-[#ec9f05]`}></div>
                             </span>
                         </div>
                     </div>
@@ -105,11 +105,11 @@ const ProjectShowCase = () => {
                         </p>
                         <div className="flex flex-col gap-2">
                             <span className="flex gap-4 items-center">
-                                <BsStars className={`text-[${Data.Project2.AccentColor}] text-xl`}/>
+                                <BsStars className={`text-[#ec9f05] text-xl`}/>
                                 <p>{Data.Project2.point1}</p>
                             </span>
                             <span className="flex gap-4 items-center">
-                                <BsStars className={`text-[${Data.Project2.AccentColor}] text-xl`}/>
+                                <BsStars className={`text-[#ec9f05] text-xl`}/>
                                 <p>{Data.Project2.point2}</p>
                             </span>
                         </div>
@@ -118,7 +118,7 @@ const ProjectShowCase = () => {
                 <div className="flex flex-col 2xl:flex-row gap-4 w-full 2xl:w-[80%] mx-auto mt-[2rem] items-center 2xl:items-start">
                     <div className="w-full px-8">
                         <div className="border-[1px] p-2 h-[40vh] md:h-[55vh] w-full 2xl:w-[45vw] rounded-3xl ">
-                            <div className={`border-[1px] h-full rounded-2xl bg-gradient-to-b from-[${Data.Project3.GradientFrom}] to-[${Data.Project3.GradientTo}] relative overflow-hidden`}>
+                            <div className={`border-[1px] h-full rounded-2xl bg-gradient-to-b from-[#c19ee0] to-[#7251b5] relative overflow-hidden`}>
                                 <div className="flex items-center justify-between px-20 pt-8 font-bold text-black">
                                     <div>
                                         <h2 className="text-xl hidden md:block">
@@ -148,7 +148,7 @@ const ProjectShowCase = () => {
                                 {Data.Project3.Timeline}
                             </span>
                             <span>
-                                <div className={`h-[2px] w-[40px] bg-[${Data.Project3.AccentColor}]`}></div>
+                                <div className={`h-[2px] w-[40px] bg-[#7251b5]`}></div>
                             </span>
                         </div>
                     </div>
@@ -159,11 +159,11 @@ const ProjectShowCase = () => {
                         </p>
                         <div className="flex flex-col gap-2">
                             <span className="flex gap-4 items-center">
-                                <BsStars className={`text-[${Data.Project3.AccentColor}] text-xl`}/>
+                                <BsStars className={`text-[#7251b5] text-xl`}/>
                                 <p>{Data.Project3.point1}</p>
                             </span>
                             <span className="flex gap-4 items-center">
-                                <BsStars className={`text-[${Data.Project3.AccentColor}] text-xl`}/>
+                                <BsStars className={`text-[#7251b5] text-xl`}/>
                                 <p>{Data.Project3.point2}</p>
                             </span>
                         </div>
