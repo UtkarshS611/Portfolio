@@ -9,8 +9,9 @@
 
 
 body{
-    height: 600vh;
+    /* height: 600vh; */
     background-color: #000814;
+    color: white;
 }
 
 .blob1 {
