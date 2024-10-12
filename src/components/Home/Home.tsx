@@ -85,20 +85,20 @@ const Home = () => {
                 </div>
                 <div className="w-full flex justify-center relative h-[35vh]">
                 <div className="h-[30vh] w-[25vh] bg-[white] p-[0.75rem] absolute top-0 left-[70%] translate-x-[-50%] rotate-[-8deg] hover:rotate-0 duration-200 hover:scale-[1.04] hover:shadow-2xl hover:z-[1] rounded-lg flex flex-col gap-2">
-                    <img src="https://images.unsplash.com/photo-1727373631848-e6da2d85c872?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="h-[22vh] w-[22vh]"/>
+                    <img src="/Images/Profile1.jpeg" className="h-[22vh] w-[22vh]"/>
                     <div className="flex justify-center items-end font-bold mt-4 font-Accent text-[#000000c4]">
                         hello it's me
                     </div>
                 </div>
                 <div className="h-[30vh] w-[25vh] bg-[white] p-[0.75rem] absolute top-0 left-[30%] translate-x-[-50%] rotate-[8deg] hover:rotate-0 duration-200 hover:scale-[1.04] hover:shadow-2xl hover:z-[1] rounded-lg flex flex-col gap-2">
-                    <img src="https://images.unsplash.com/photo-1727915325711-5fdfb5a0a55c?q=80&w=2696&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="h-[22vh] w-[22vh]"/>
+                    <img src="https://images.unsplash.com/photo-1727773377765-04d5bd488f44?q=80&w=2525&auto=format&fit=crop&
+                    ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="h-[22vh] w-[22vh]"/>
                     <div className="flex justify-center items-end font-bold mt-4 font-Accent text-[#000000c4]">
                         That's me again..
                     </div>
                 </div>
                 <div className="h-[30vh] w-[25vh] bg-[white] p-[0.75rem] absolute top-[10%] duration-200 hover:scale-[1.04] hover:z-[1] rounded-lg flex flex-col gap-2 hover:shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1727773377765-04d5bd488f44?q=80&w=2525&auto=format&fit=crop&
-                    ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="h-[22vh] w-[22vh]"/>
+                    <img src="/Images/Profile2.jpeg" className="h-[22vh] w-[22vh]"/>
                     <div className="flex justify-center items-end font-bold mt-4 font-Accent text-[#000000c4]">
                         That's me
                     </div>
