@@ -12,6 +12,7 @@ body{
     /* height: 600vh; */
     background-color: #000814;
     color: white;
+    overflow-x: hidden;
 }
 
 .blob1 {
@@ -56,4 +57,33 @@ body{
             transform: translateX(-600px);
         }
 
+}
+
+
+.animate{
+    /* display: none; */
+    animation: slide 1s ;
+}
+
+.animate_2{
+    animation: two 1s;
+}
+
+@keyframes slide {
+    from{
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0rem);
+    }
+}
+@keyframes two {
+    from{
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0rem);
+    }
 }

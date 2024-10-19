@@ -12,10 +12,10 @@ const Header = () => {
                 <a href="" className="hover:bg-[#00000096] duration-200 hover:backdrop-blur-[200px] px-4 py-2 rounded-full">Skills</a>
             </div>
             <div className="flex gap-4 w-full justify-end">
-                <button className="hidden md:flex gap-2 font-light justify-center items-center">
+                <a href="https://www.linkedin.com/in/utkarsh-singh-5630b42aa/" className="hidden md:flex cursor-pointer gap-2 font-light justify-center items-center">
                     Linkedin
                     <IoIosArrowRoundForward className="rotate-[-45deg] text-2xl" />
-                </button>
+                </a>
                 <button className="flex gap-2 font-light justify-center items-center">
                     Resume
                     <IoIosArrowRoundForward className="rotate-[-45deg] text-2xl"/>

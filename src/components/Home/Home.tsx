@@ -25,7 +25,7 @@ const Home = () => {
 
     return (
         <main>
-            <Header />
+            <Header/>
             <div className="flex justify-center items-center h-screen relative">
                 <div className="bg-[#000814] h-screen w-full overflow-hidden absolute">
                 <SparklesCore className=" w-full h-[200vh] z-[1] translate-y-[-50%] absolute"  particleColor="#fff" particleSize={1} speed={1} particleDensity={20} maxSize={0.2} background="transparent"
@@ -40,10 +40,10 @@ const Home = () => {
                 <div className="blob2 z-[19]"></div>
                 </div>
                 <div className="text-xl  text-white w-full flex flex-col justify-center font-light items-center z-[99]">
-                <div className="tracking-tight sm:text-xl text-[1rem]">
+                <div className="tracking-tight sm:text-xl text-[1rem] animate">
                     Hello👋  I'm Utkarsh, a Web developer
                 </div>
-                <div className="flex flex-col justify-center items-center mt-4 text-3xl sm:text-5xl gap-1 font-semi-bold">
+                <div className="animate flex flex-col justify-center items-center mt-4 text-3xl sm:text-5xl gap-1 font-semi-bold">
                     <div>
                     I help founders transform 
                     </div>
@@ -51,7 +51,7 @@ const Home = () => {
                     ideas into impactful <span className="font-Accent text-2xl">websites</span>
                     </div>
                 </div>
-                <div className="flex gap-8 md:gap-14 mt-10 flex-col md:flex-row">
+                <div className="flex animate_2 gap-8 md:gap-14 mt-10 flex-col md:flex-row">
                     <button className="flex justify-center items-center bg-[#ffffff39] pr-1 pl-6 py-1 backdrop-blur-3xl rounded-full gap-2 border-[0.5px] hover:bg-white duration-200 hover:text-black border-[#ffffff13]">
                         Let's connect
                     <span className="bg-white font-light text-black rounded-full flex items-center justify-center p-[0.75rem]">

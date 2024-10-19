@@ -28,7 +28,7 @@ const ProjectShowCase = () => {
                                         <FaArrowRight />
                                     </div>
                                 </div>
-                                <div className="absolute mx-auto w-[80%] flex justify-center left-[50%] md:hover:scale-[1.08] md:hover:rotate-[-5deg] duration-200 translate-x-[-50%] md:bottom-[-5%] bottom-0 shadow-xl">
+                                <div className="absolute mx-auto w-[80%] flex justify-center left-[50%] md:hover:scale-[1.08] hover:rotate-[-5deg] duration-200 translate-x-[-50%] md:bottom-[-5%] bottom-0 shadow-xl">
                                     <img className="rounded-xl" src={Data.Project1.ImgSRC} alt="" />
                                 </div>
                             </div>
