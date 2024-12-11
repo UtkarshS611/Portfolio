@@ -3,87 +3,84 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Accent;
-    src: url(/Fonts/Accent/Callisa-Beauty-BF6639cfd4336e6.ttf);
+  font-family: Accent;
+  src: url(/Fonts/Accent/Callisa-Beauty-BF6639cfd4336e6.ttf);
 }
 
-
-body{
-    /* height: 600vh; */
-    background-color: #000814;
-    color: white;
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
 .blob1 {
-    position: absolute;
-    opacity: 0.5;
-    width: 400px;
-    height: 400px;
-    aspect-ratio: 1/1;
-    animation: animate 10s linear infinite forwards alternate
-        ;
-    filter: blur(200px);
-    background-color: #023e8a;
-    border-radius: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 18rem
+  position: absolute;
+  opacity: 0.5;
+  width: 400px;
+  height: 400px;
+  aspect-ratio: 1/1;
+  animation: animate 10s linear infinite forwards alternate;
+  filter: blur(200px);
+  background-color: #023e8a;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18rem;
 }
+
 .blob2 {
-    position: absolute;
-    opacity: 0.5;
-    width: 400px;
-    height: 400px;
-    aspect-ratio: 1/1;
-    animation: animate 10s linear infinite forwards alternate
-        ;
-    animation-delay: 5s;
-    filter: blur(200px);
-    background-color: #480ca8;
-    border-radius: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 18rem
+  position: absolute;
+  opacity: 0.5;
+  width: 400px;
+  height: 400px;
+  aspect-ratio: 1/1;
+  animation: animate 10s linear infinite forwards alternate;
+  animation-delay: 5s;
+  filter: blur(200px);
+  background-color: #480ca8;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18rem;
 }
 
 @keyframes animate {
-        from{
-            transform: translateX(100px);
-        }
-        to{
-            transform: translateX(-600px);
-        }
+  from {
+    transform: translateX(100px);
+  }
 
+  to {
+    transform: translateX(-600px);
+  }
 }
 
-
-.animate{
-    /* display: none; */
-    animation: slide 1s ;
+.animate {
+  /* display: none; */
+  animation: slide 1s;
 }
 
-.animate_2{
-    animation: two 1s;
+.animate_2 {
+  animation: two 1s;
 }
 
 @keyframes slide {
-    from{
-        transform: translateY(-1rem);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0rem);
-    }
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0rem);
+  }
 }
+
 @keyframes two {
-    from{
-        transform: translateY(1rem);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0rem);
-    }
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0rem);
+  }
 }
