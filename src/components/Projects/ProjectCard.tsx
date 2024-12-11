@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Globe, SquareArrowOutUpRight, TagsIcon } from 'lucide-react';
+import { Github, SquareArrowOutUpRight, TagsIcon } from 'lucide-react';
 import { Project } from '../../types/project';
 
 export const ProjectCard: React.FC<Project> = ({
