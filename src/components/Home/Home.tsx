@@ -1,39 +1,26 @@
-const Home = () => {
+import { SparklesCore } from "../ui/sparkles";
+import { FaArrowRight } from "react-icons/fa6";
+import { BsFiles } from "react-icons/bs";
+import { useState } from "react";
+import Header from "../Header/Header";
+
+export const Home = () => {
+  const [copySuccess, setCopySuccess] = useState<string>("");
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopySuccess("Copied to Clipboard");
+
+      setTimeout(() => {
+        setCopySuccess("");
+      }, 2000);
+    } catch (err) {
+      setCopySuccess("Failed to copy!");
+    }
+  };
   return (
-    <div>
-        Hey
-    </div>
-  )
-}
-
-export default Home
-
-
-
-
-// import { SparklesCore } from "../ui/sparkles";
-// import { FaArrowRight } from "react-icons/fa6";
-// import { BsFiles } from "react-icons/bs";
-// import Header from "../Header/Header";
-// import React, { useState } from "react";
-
-
-// const [copySuccess, setCopySuccess] = useState<string>("");
-
-//   const copyToClipboard = async (text: string) => {
-//     try {
-//       await navigator.clipboard.writeText(text);
-//       setCopySuccess("Copied to Clipboard");
-
-//       setTimeout(() => {
-//         setCopySuccess("");
-//       }, 2000);
-//     } catch (err) {
-//       setCopySuccess("Failed to copy!");
-//     }
-//   };
-
-{/* <section>
+    <section>
       <Header />
       <div className="flex justify-center items-center h-screen relative">
         <div className="bg-white dark:bg-[#000814] h-screen w-full overflow-hidden absolute">
@@ -46,8 +33,7 @@ export default Home
             maxSize={0.2}
             background="transparent"
           />
-          <div className="h-[1460vh] z-19 w-[100vh] absolute left-[50%] translate-x-[-50%] top-[100%] blur-[200px] opacity-100 bg-purple-400 dark:bg-white rounded-full aspect-square flex justify-center items-center">
-          </div>
+          <div className="h-[1460vh] z-19 w-[100vh] absolute left-[50%] translate-x-[-50%] top-[100%] blur-[200px] opacity-100 bg-purple-400 dark:bg-white rounded-full aspect-square flex justify-center items-center"></div>
           <div className="h-[510vh] w-[500vh] absolute left-[50%] translate-x-[-50%] top-[80%] z-[20] bg-purple-300 dark:bg-white rounded-full aspect-[1/1] flex justify-center items-center">
             <div className="h-[510vh] w-[511vh] cursor-pointer absolute top-[0.035%] bg-white dark:bg-[#000814] rounded-full aspect-[1/1] blur-[1.5px]"></div>
           </div>
@@ -112,7 +98,7 @@ export default Home
           <div className="h-[30vh] w-[25vh] bg-gray-100 dark:bg-[white] p-[0.75rem] absolute top-0 left-[30%] translate-x-[-50%] rotate-[8deg] hover:rotate-0 duration-200 hover:scale-[1.04] hover:shadow-2xl hover:z-[1] rounded-lg flex flex-col gap-2">
             <img
               src="https://images.unsplash.com/photo-1727773377765-04d5bd488f44?q=80&w=2525&auto=format&fit=crop&
-                    ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               className="h-[22vh] w-[22vh]"
             />
             <div className="flex justify-center items-end font-bold mt-4 font-Accent text-[#000000c4]">
@@ -127,4 +113,7 @@ export default Home
           </div>
         </div>
       </div>
-    </section> */}
+    </section>
+  );
+};
+
