@@ -1,27 +1,39 @@
-import { SparklesCore } from "../ui/sparkles";
-import { FaArrowRight } from "react-icons/fa6";
-import { BsFiles } from "react-icons/bs";
-import Header from "../Header/Header";
-import React, { useState } from "react";
-
-const Home: React.FC = () => {
-  const [copySuccess, setCopySuccess] = useState<string>("");
-
-  const copyToClipboard = async (text: string) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopySuccess("Copied to Clipboard");
-
-      setTimeout(() => {
-        setCopySuccess("");
-      }, 2000);
-    } catch (err) {
-      setCopySuccess("Failed to copy!");
-    }
-  };
-
+const Home = () => {
   return (
-    <main>
+    <div>
+        Hey
+    </div>
+  )
+}
+
+export default Home
+
+
+
+
+// import { SparklesCore } from "../ui/sparkles";
+// import { FaArrowRight } from "react-icons/fa6";
+// import { BsFiles } from "react-icons/bs";
+// import Header from "../Header/Header";
+// import React, { useState } from "react";
+
+
+// const [copySuccess, setCopySuccess] = useState<string>("");
+
+//   const copyToClipboard = async (text: string) => {
+//     try {
+//       await navigator.clipboard.writeText(text);
+//       setCopySuccess("Copied to Clipboard");
+
+//       setTimeout(() => {
+//         setCopySuccess("");
+//       }, 2000);
+//     } catch (err) {
+//       setCopySuccess("Failed to copy!");
+//     }
+//   };
+
+{/* <section>
       <Header />
       <div className="flex justify-center items-center h-screen relative">
         <div className="bg-white dark:bg-[#000814] h-screen w-full overflow-hidden absolute">
@@ -115,8 +127,4 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-    </main>
-  );
-};
-
-export default Home;
+    </section> */}
