@@ -2,9 +2,9 @@ import { SparklesCore } from "../ui/sparkles";
 import { FaArrowRight } from "react-icons/fa6";
 import { BsFiles } from "react-icons/bs";
 import Header from "../Header/Header";
-import { useState } from "react";
+import React, { useState } from "react";
 
-const Home = () => {
+const Home: React.FC = () => {
   const [copySuccess, setCopySuccess] = useState<string>("");
 
   const copyToClipboard = async (text: string) => {
