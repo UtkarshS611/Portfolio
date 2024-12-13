@@ -1,6 +1,6 @@
-import  Footer  from "./Components/Footer/Footer";
-import  Home  from "./Components/Home/Home";
-import  ProjectSection  from "./Components/Projects/ProjectSection";
+import  Footer  from "./Components/Footer/footer";
+import  Home  from "./Components/Home/home";
+import  ProjectSection  from "./Components/Projects/projectSection";
 import { ThemeProvider } from "./Contexts/ThemeContext";
 
 const App = () => {
