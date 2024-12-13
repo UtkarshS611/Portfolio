@@ -4,7 +4,7 @@ import { BsFiles } from "react-icons/bs";
 import { useState } from "react";
 import Header from "../Header/Header";
 
-export const Home = () => {
+const Home = () => {
   const [copySuccess, setCopySuccess] = useState<string>("");
 
   const copyToClipboard = async (text: string) => {
@@ -117,3 +117,4 @@ export const Home = () => {
   );
 };
 
+export default Home;

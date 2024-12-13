@@ -2,7 +2,7 @@ import { ProjectCard } from "./ProjectCard";
 import { projects } from "../../data/projects";
 import React from "react";
 
-export const ProjectSection: React.FC = () => {
+const ProjectSection: React.FC = () => {
   return (
     <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto mt-16">
       <div className="text-center mb-12">
@@ -24,3 +24,5 @@ export const ProjectSection: React.FC = () => {
     </section>
   );
 };
+
+export default ProjectSection;
